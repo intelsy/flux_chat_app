@@ -1,0 +1,34 @@
+<% if user_signed_in? %>
+<!-- ユーザーがログイン中の場合 -->
+  <div class="devise">
+    <h1>ユーザー一覧建設予定地</h1>
+    <h4>user_signed_in?</h4>
+    <%= user_signed_in? %>
+    <h4>user_session</h4>
+    <%= user_session %>
+    <h4>current_user</h4>
+    <%= current_user.name %>
+    </br></br>
+
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %><br />
+    <%= link_to '変更', edit_user_registration_path %><br />
+  </div>
+
+
+  <!-- <%= debug current_user %> -->
+
+
+<% else %>
+<!-- ユーザーがログインしていない場合 -->
+<div class="devise">
+  <h1>logoutしてるよ</h1>
+  <h4>user_signed_in?</h4>
+  <%= user_signed_in? %>
+  <h4>user_session</h4>
+  <%= user_session %></br></br>
+
+  <%= link_to "ログイン", "/users/sign_in", method: :get %><br />
+
+</div>
+
+<% end %>

@@ -1,11 +1,15 @@
 !!! 5
 %html
   %head
-    %title flux_tutorial
+    %title OKaka Talk
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     %link{ href: '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel: 'stylesheet' }/
+    %link{ href: 'https://fonts.googleapis.com/css?family=Quicksand:700', rel:'stylesheet'}
+    %link{ href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP', rel:'stylesheet'}
     = javascript_include_tag 'application'
     = javascript_include_tag '/assets/javascripts/boot.js'
     = csrf_meta_tags
   %body
     = yield
+  %p.notice= notice
+  %p.alert= alert

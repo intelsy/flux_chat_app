@@ -3,6 +3,8 @@ import Header from './header'
 import UserList from './userList'
 import MessagesBox from './messagesBox'
 
+// import ログイン情報など(session)
+
 class App extends React.Component {
   render() {
     return (

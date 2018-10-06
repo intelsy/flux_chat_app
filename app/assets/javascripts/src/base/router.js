@@ -20,4 +20,5 @@ export default class Router {
     this.views[View.name].decorate(el, opts)
     return this.views[View.name]
   }
+
 }

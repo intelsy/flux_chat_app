@@ -3,21 +3,23 @@
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+// #edce0d
 html {
   font-size: 62.5%;
   height: 100%;
 }
 body {
-  background: #fff;
-
+  background: #EEF1F6;
   position: relative;
-  color: #444;
+  color: #3B1E1E;
   font: 300 13px/1.6 Roboto, 'Helvetica Neue', Helvetica, Arial;
   margin: 0 auto;
   min-height: 100%;
   overflow: hidden;
 }
+
 ul,
 ol {
   margin: 0;
@@ -73,4 +75,103 @@ textarea {
 .hidden {
   display: none !important;
   visibility: hidden;
+}
+
+.header{
+  color:#edce0d;
+  font-family: 'Quicksand', sans-serif;
+  align-items: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+  }
+
+  li:first-child {
+     margin-right: auto;
+  }
+
+  li a {
+    display: block;
+    margin: 0;
+    padding: 20px;
+    color:#edce0d;
+    text-decoration: none;
+  }
+
+  #logo{
+    padding: 0 0;
+    margin: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+////////////ログイン,新規登録,ユーザー情報の変更など//////////////////
+h2{
+  font-size: 30px;
+  text-align:center;
+}
+
+.devise{
+  background-color: #FFF;
+  width: 33%;
+  border-radius: 6px;
+  text-align:center;
+  padding: 20px 0 20px 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],{
+    padding: 0.8em;
+    margin: 0.8em;
+    outline: none;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 75%;
+  }
+
+  input:focus,
+  texture:focus {
+    box-shadow: 0 0 7px #3498db;
+    border: 1px solid #3498db;
+  }
+
+  input[type="submit"]{
+    border-radius: 0;
+    margin: 12px;
+    background: -moz-linear-gradient(top, #FFF 0%, #EEE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+    border: 1px solid #DDD;
+    color: #111;
+    padding: 10px 30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  input[type="submit"]:hover{
+    background: -moz-linear-gradient(top, #EFEFEF 0%, #EEE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#EEE));
+  }
+  #userIcon {
+    height: 200px;
+    width: 200px;
+  }
 }

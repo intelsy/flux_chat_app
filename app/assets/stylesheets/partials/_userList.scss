@@ -13,17 +13,17 @@
     cursor: pointer;
 
     &--new {
-      background: #EEF1F6;
+      background: rgba( 0, 0, 0, 0.03 );
       font-weight: 500;
 
       .user-list__item__icon {
-        color: #1D9BCE;
+        color: #FBE300;
         margin-right: 3px;
       }
     }
 
     &--active {
-      background: #93C26D;
+      background: #3B1E1E;
       color: #fff;
       font-weight: 500;
       position: relative;
@@ -35,7 +35,7 @@
         height: 0;
         border-style: solid;
         border-width: 40px 0 40px 20px;
-        border-color: transparent transparent transparent #93C26D;
+        border-color: transparent transparent transparent #3B1E1E;
         position: absolute;
         display: block;
         right: -20px;
